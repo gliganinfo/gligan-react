@@ -1,5 +1,5 @@
 import React from 'react';
-import LazyLoad from 'react-lazyload';
+// import LazyLoad from 'react-lazyload';
 
 import './styles/App.scss';
 
@@ -37,7 +37,20 @@ function App() {
           Apart from programming, I like to write. I have written several books and guides and soon there will be many interesting things, here I leave you my knowledge:
           <br /><br />
           <div className="articles">
-            <section className="a">
+
+            {/*
+
+              fetch('http://localhost:8080/api/ejemplo')
+              .then(function(response) {
+                console.log(response)
+              })
+              .then(function(myJson) {
+                console.log(myJson);
+              })
+              */
+            }
+
+            {/*<section className="a">
                <LazyLoad><div>
                 <img src="https://picsum.photos/300/200" />
                 <p className="title">
@@ -68,7 +81,7 @@ function App() {
                   <span className="date">28th of June, 2019</span>
                 </p>
               </div>
-            </section>
+            </section>*/}
           </div>
           <a><button className="articlesbtn">Hey! This isn't all. Click here for more</button></a>
         </p>
