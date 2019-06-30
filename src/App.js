@@ -38,17 +38,7 @@ function App() {
           <br /><br />
           <div className="articles">
 
-            {/*
-
-              fetch('http://localhost:8080/api/ejemplo')
-              .then(function(response) {
-                console.log(response)
-              })
-              .then(function(myJson) {
-                console.log(myJson);
-              })
-              */
-            }
+            <Articulos />
 
             {/*<section className="a">
                <LazyLoad><div>
