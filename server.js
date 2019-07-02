@@ -1,11 +1,11 @@
 const express = require('express');
 const path = require('path');
-
+/*
 var Datastore = require('nedb'),
     db = new Datastore({ filename: 'database.db', autoload: true });
 
 db.loadDatabase();
-
+*/
 
 /*db.insert({
   "title": "【TUTORIAL】Personalizando de ⓪ a ❶⓿⓿ el BASH Prompt en Linux®",
@@ -16,14 +16,22 @@ db.loadDatabase();
   "content": "Hola, Maricarmen. Añadir una carpeta con todos los markdowns y que esto sea un enlace que luego react pueda coger y convertir a html o lo que sea, tu ya me entiendes."
 });*/
 
-
-console.log(db);
+// console.log(db);
 
 const app = express();
 const port = process.env.PORT || 8080;
 
 app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, 'build')));
+
+app.use(function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', `http://localhost:${port}`);
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept'
+  );
+  next();
+});
 
 app.get('/api/get-articles', function (req, res) {
 	// res.json();
