@@ -4,13 +4,21 @@ import axios from 'axios'
 
 import './styles/App.scss';
 
+const API_URL = "https://servidor-gligan.glitch.me/";
+
 class App extends Component {
 
+  state = {
+    articles: []
+  }
+
   componentDidMount() {
-    // https://api.nasa.gov/planetary/apod?api_key=RbCpwSLX5ClK168eToDz4CU7noVU929qM0LQpmHb
-    axios.get('http://localhost:8080/api/ejemplo')
-    .then(res=>console.log(res.data.url))
-    .catch(err=>console.log(err))
+    const url = `${API_URL}/articles`;
+    axios.get(url).then(response => response.data)
+    .then((data) => {
+      this.setState({ articles: Object.entries(data) });
+      console.log(this.state.articles);
+     })
   }
 
   render () {
@@ -48,7 +56,11 @@ class App extends Component {
             <br /><br />
             <div className="articles">
 
-              {/*<Articulos />*/}
+              <div>
+                {this.state.articles.map((article) => (
+                  <p>{article.title}</p>
+                ))}
+              </div>
 
               {/*<section className="a">
                 <LazyLoad><div>
