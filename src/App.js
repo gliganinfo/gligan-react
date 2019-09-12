@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import LazyLoad from 'react-lazyload';
+import LazyLoad from 'react-lazyload';
 import axios from 'axios'
 
 import './styles/App.scss';
@@ -37,11 +37,12 @@ class App extends Component {
           </p>
           <p className="left-indicator">
             <h2 className="txt">Language Skills</h2>
-            I speak <i>very well</i> <b>English</b> 🇺🇸 from many years ago 😊. También hablo <b>Español</b> 🇪🇸 (<i>Castellano</i>) a nivel nativo, <i>i també parle una mica de <b>Valencià</b></i> 🥘. Știu ceva despre limba <b>Română</b> 🇷🇴 et j'apprends le <b>Français</b> 🇫🇷.
+            I speak <i>very well</i> <b>English</b> 🇺🇸 from many years ago 😊. También hablo <b>Español</b> 🇪🇸 (<i>Castellano</i>) a nivel nativo, <i>i també parle una mica de <b>Valencià</b></i> 🥘. Știu ceva despre limba <b>Română</b> 🇷🇴. J'apprends le <b>Français</b> 🇫🇷 и еще я учу <b>русский</b> 🇷🇺 язык, мне нравится, но мне трудно.
+            <br /><br />
           </p>
           <p className="left-indicator">
             <h2 className="txt">Other Skills</h2>
-            I also like <b>photography</b> 📷, in my <a href="https://www.instagram.com/linux_rdgg/">Instagram</a> I have super cool photos, and of course I love the design. <i>“When I open Adobe XD I do amazing things”</i>.
+            I also like <b>photography</b> 📷, in my <a href="https://www.instagram.com/linux_rdgg/" target="_blank">Instagram</a> I have super cool photos, and of course I love the design. <i>“When I open Adobe XD I do amazing things”</i>.
           </p>
           <p className="left-indicator">
             <h2 className="txt">Social stuff</h2>
@@ -52,7 +53,9 @@ class App extends Component {
           </p>
           <p className="left-indicator">
             <h2 className="txt">Articles</h2>
-            Apart from programming, I like to write. I have written several books and guides and soon there will be many interesting things, here I leave you my knowledge:
+            {/*Apart from programming, I like to write. I have written several books and guides and soon there will be many interesting things, here I leave you my knowledge:*/}
+            I think that the two most important things in this life are <b>science</b> 🔬 —<i>to understand what surrounds us</i>— <i><strike>and kittens</strike></i> and <b>yourself</b> —<i>cause if you're not clear who you are, how you're going to control yourself?</i>—
+            <br/><br/>That's why I love programming (<i>and everything related to <b>computer science</b></i>), and <b>thinking; thinking a lot 🤔</b>, and I invite you to visit my “<i>darkest mental places</i>” with these articles:
             <br /><br />
             <div className="articles">
 
@@ -62,7 +65,7 @@ class App extends Component {
                 ))}
               </div>
 
-              {/*<section className="a">
+              {/**/}<section className="a">
                 <LazyLoad><div>
                   <img src="https://picsum.photos/300/200" />
                   <p className="title">
@@ -86,16 +89,17 @@ class App extends Component {
                     <span className="date">28th of June, 2019</span>
                   </p>
                 </div></LazyLoad>
-                <div>
+                 <LazyLoad><div>
                   <img src="https://picsum.photos/300/200" />
                   <p className="title">
                     Título para el Artículo IV
                     <span className="date">28th of June, 2019</span>
                   </p>
-                </div>
-              </section>*/}
+                </div></LazyLoad>
+              </section>
             </div>
-            {/*<a href="#">*/}<button className="articlesbtn">Hey! This isn't all. Click here for more</button>{/*</a>*/}
+            {/*<a href="#">*/}{/*<button className="articlesbtn">Hey! This isn't all. Click here for more</button>*/}{/*</a>*/}
+            <button className="articlesbtn">Hey! This isn't all. Click here for more</button>
           </p>
         </div>
       </div>
