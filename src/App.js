@@ -37,7 +37,8 @@ class App extends Component {
           </p>
           <p className="left-indicator">
             <h2 className="txt">Language Skills</h2>
-            I speak <i>very well</i> <b>English</b> 🇺🇸 from many years ago 😊. También hablo <b>Español</b> 🇪🇸 (<i>Castellano</i>) a nivel nativo, <i>i també parle una mica de <b>Valencià</b></i> 🥘. Știu ceva despre limba <b>Română</b> 🇷🇴. J'apprends le <b>Français</b> 🇫🇷 и еще я учу <b>русский</b> 🇷🇺 язык, мне нравится, но мне трудно.
+            I speak <i>very well</i> <b>English</b> 🇺🇸 from many years ago 😊. También hablo <b>Español</b> 🇪🇸 (<i>Castellano</i>) a nivel nativo, <i>i també parle una mica de <b>Valencià</b></i> 🥘. Știu ceva despre limba <b>Română</b> 🇷🇴.
+            <br /><br />J'apprends le <b>Français</b> 🇫🇷 и еще я учу <b>русский</b> 🇷🇺 язык, мне нравится, но мне трудно.
           </p>
           <p className="left-indicator">
             <h2 className="txt">Other Skills</h2>
