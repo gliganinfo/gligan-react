@@ -29,7 +29,7 @@ class App extends Component {
           <div><h1>Ronaldo David Gomes Gligan</h1></div>
           <p className="left-indicator">
             <h2 className="txt">Introduction</h2>
-            Hey! I'm <b>Ronaldo David Gomes Gligan</b> and I work as a <b>Programmer</b> 💻 from the age of 8, I like too much the web but I also know C (Arduino), PHP & Python.
+            Hey! I'm <b>Ronaldo David Gomes Gligan</b> and I work as a <b>Programmer</b> 💻 from the age of 8, I like too much the <b>web</b> but I also know <b>Rust</b>, C for low-level and Arduino & Python.
           </p>
           <p className="left-indicator">
             <h2 className="txt">Programming Skills</h2>
